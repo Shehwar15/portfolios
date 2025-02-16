@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #FFF2F2;
+    color: #2D336B;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #7886C7;
+    font-size: 40px;
+    padding: 10px 20px;
+    text-align: left;
+}
+.image{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.hero-img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color:#A9B5DF;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 40px 20px;
+}
+
+.card {
+    background: #FFF2F2;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 4px solid #A9B5DF;
+    padding: 20px;
+    margin: 20px;
+   
+}
+
+.info-table {
+    width: 100%;
+    text-align: left;
+}
+
+.info-table td {
+    color: #2D336B;
+    font-size: 20px;
+    padding: 10px;
+}
+#resume{
+    width: 100%;
+}
+#resume .card{
+    width: 200px;
+}
+#about {
+    width: 100%;
+}
+
+#about .card {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#projects {
+    width: 100%;
+}
+
+#projects .card {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#contact {
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.contact-card {
+    background: #FFF2F2;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 4px solid #A9B5DF;
+    padding: 30px;
+    margin: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #7886C7;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #A9B5DF;
+    border-radius: 5px;
+    background: #FFF2F2;
+    color: #2D336B;
+    width: 100%;
+}
+
+.btn {
+    background-color: #FFF2F2;
+    padding: 12px 20px;
+    border: 2px solid #A9B5DF;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.btn:hover {
+    background-color: #7886C7;
+    color: #FFF2F2;
+}
+@media (max-width: 1024px) {
+    .section-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+   
+    h2 {
+        font-size: 30px;
+        padding: 5px 15px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .contact-card {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    *{
+        font-size: 12px;
+    }
+   .info-table td{
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 26px;
+        padding: 15px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
